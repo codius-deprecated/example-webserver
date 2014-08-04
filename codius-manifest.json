@@ -1,0 +1,8 @@
+{
+  "name": "example-webserver",
+  "apis": ["res", "secrets"],
+  "main": "contract.js",
+  "files": [
+    "public_html/index.html"
+  ]
+}
