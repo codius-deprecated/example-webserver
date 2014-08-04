@@ -1,6 +1,6 @@
 {
   "name": "example-webserver",
-  "apis": ["res", "secrets"],
+  "apis": ["response", "secrets"],
   "main": "contract.js",
   "files": [
     "public_html/index.html"

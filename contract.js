@@ -1,5 +1,5 @@
 var fs = require('fs');
-var res = require('res');
+var res = require('response');
 
 var secrets = require('secrets');
 

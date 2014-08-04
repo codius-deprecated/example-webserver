@@ -13,5 +13,5 @@ To try this example contract, run:
 ``` sh
 git clone https://github.com/codius/example-webserver.git codius-example-webserver
 cd codius-example-webserver
-codius upload
+codius serve
 ```
