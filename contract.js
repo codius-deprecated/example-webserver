@@ -1,12 +1,10 @@
 var fs = require('fs');
-var res = require('response');
+var http = require('http');
 
-var secrets = require('secrets');
-
-secrets.getKeypair(function (error, keypair) {
+var server = http.createServer(function (request, response) {
   var indexHtml = fs.readFileSync('public_html/index.html');
-  indexHtml = indexHtml.replace('%KEY%', keypair.public);
-
-  res.write(indexHtml);
-  res.end()
+  response.writeHead(200);
+  response.end(indexHtml);
 });
+
+server.listen(8000);
